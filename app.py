@@ -46,7 +46,6 @@ def main():
     #mode        = 'c' #configParser.get('software-config', 'mode')
 
     ap = argparse.ArgumentParser()
-
     ap.add_argument("-f", "--read-file",
                     action="store_true",
                     default=False)

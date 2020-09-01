@@ -33,21 +33,24 @@ class ReconstructionWorker(threading.Thread):
 
     def __init__(self):
         super().__init__(daemon=True)
-
+## features of the class ReconstructionWorker
         self._input_queue = None
         self._output_queue = None
         self._reconstruction = None
         self._running = True
         self._algorithm = None
+        self._reconstructing = True #added to enable the reconstruction worker to pass data from the input queue to the output queue without any processing occuring
+
 
     def reset(self,input_queue, output_queue,algorithm,n_el):
         self._input_queue   = None
         self._output_queue  = None
-        #self._reconstruction = None
 
+        self._reconstructing = False
         self._input_queue   = input_queue
         self._output_queue  = output_queue
         self._running       = True
+
         self._algorithm     = algorithm
         self._baseline      = 1 
 
@@ -82,31 +85,62 @@ class ReconstructionWorker(threading.Thread):
         return 0
 
     def stop_reconstructing(self):
-        self._running = False
+        self._running = True
+        self._reconstructing = False
+
 
     def start_reconstructing(self):
         self._running = True
+        self._reconstructing = True
 
     def run(self):
         # TODO: add time tracking here!
         while self._running:
-            if self._input_queue is not None:             
-                data = np.array(self._input_queue.get())
-                # preprocess the data to exclude zero values? 
-                data = [1.0 if x == 0 else x for x in data]
+          #  self._reconstructing = True
+            if self._reconstructing is True:
+                if self._input_queue is not None:
+                    data = np.array(self._input_queue.get())
+                    # preprocess the data to exclude zero values?
+                    data = [1.0 if x == 0 else x for x in data]
 
-                print (len(data))
+                    print(len(data))
 
-                if self._baseline == 1: 
-                    self._reconstruction.update_reference(data)
-                    self._baseline = 0
+                    if self._baseline == 1:
+                        self._reconstruction.update_reference(data)
+                        self._baseline = 0
 
-                try:
-                    before = time.time()
-                    img = self._reconstruction.eit_reconstruction(data)
-                    logger.info("reconstruction time: %.2f", time.time() - before)
-                except RuntimeError as err:
-                    logger.info('reconstruction error: %s', err)
-                else:
-                    self._output_queue.put(img)
+                    try:
+                        before = time.time()
+                        img = self._reconstruction.eit_reconstruction(data)
+                        logger.info("reconstruction time: %.2f", time.time() - before)
+                    except RuntimeError as err:
+                        logger.info('reconstruction error: %s', err)
+                    else:
+                        self._output_queue.put(img)
+                        ##This section will handle what to do if the "reconstructing" is false, enabling the reconstruction to be turned off.
+            else:
+
+
+                     if self._input_queue is not None:
+                         data = np.array(self._input_queue.get())
+                         # preprocess the data to exclude zero values?
+                         data = [1.0 if x == 0 else x for x in data]
+
+                         print(len(data))
+                         print('reconstruction off')
+
+                     #     if self._baseline == 1:
+                     #         self._reconstruction.update_reference(data)
+                     #         self._baseline = 0
+                     #
+                     #     try:
+                     #         before = time.time()
+                     #     img = data  # self._reconstruction.eit_reconstruction(data)
+
+                     #         #logger.info("reconstruction time: %.2f", time.time() - before)
+                     #     except RuntimeError as err:
+                     #         logger.info('reconstruction error: %s', err)
+                     #     else:
+
+
 

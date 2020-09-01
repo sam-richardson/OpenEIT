@@ -55,7 +55,7 @@ def parse_any_line(line, mode):
         except ValueError:
             return None
 
-        for item in data.split(";"):
+        for item in data.split(","):
             item = item.strip()
             if not item:
                 continue
@@ -94,7 +94,7 @@ class SerialHandler:
         self._bytestream = ''
         # self._data_type = data_type
         self._mode = 'd' # mode
-
+        self._reconstructing = True
         self.raw_text = 'streamed data'
         if platform == "darwin":
             # Get the BLE provider for the current  platform.
@@ -357,10 +357,12 @@ class SerialHandler:
             timestr = time.strftime("%Y%m%d-%H%M%S")
             self._recording = True
             # self._record_file = open('data_' + timestr + '.txt', 'a')
-            self._bytestream = '' 
+            self._bytestream = ''
+            self._reconstructing = False ##added by sam
 
     def stop_recording(self):
         with self._recording_lock:
             print('recording stopped')
             self._recording = False
             # self._record_file.close()
+            self._reconstructing = True

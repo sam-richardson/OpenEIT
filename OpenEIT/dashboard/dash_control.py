@@ -74,15 +74,15 @@ class runGui(object):
                 href='/static/bootstrap.min.css'
             ),
 
-            # logo and brand name 
+            # logo and brand name
             html.Div([
                 dcc.Link(
-                html.Div([
-                    html.Img(
-                        src='static/logo-white.png',
-                        style={'height': 30, 'margin-right': 10}),
-                    'OpenEIT Dashboard'
-                ]),
+                # html.Div([
+                #     html.Img(
+                #         src='static/logo-white.png',
+                #         style={'height': 30, 'margin-right': 10}),
+                #     'OpenEIT Dashboard'
+                # ]),
                 style={'margin-right': 40},
                 className="navbar-brand",
                 href='/'
@@ -102,14 +102,14 @@ class runGui(object):
 
                 html.Div([
                     html.Pre('    '),
-                    html.A(children='Download', 
+                    html.A(children='Download',
                         id='download-link',
                         download="rawdata.txt",
                         href="",
                         target="_blank"
                     ),
                 ], className='btn-group'),
-            ], className='navbar navbar-expand-lg navbar-dark bg-dark'), 
+            ], className='navbar navbar-expand-lg navbar-dark bg-dark'),
 
             dcc.Location(id='url', refresh=False),
 
@@ -138,16 +138,41 @@ class runGui(object):
                 if self.recording == False:
                     if self.connected == True: 
                         self.controller.start_recording()
+                        self.controller.image_reconstruct._reconstructing=False #set the reconstruction to off.
                         return 'Stop Recording'
                     else: 
                         #print ('comms not connected')
                         return 'Record'
                 else:
-                    print ('stop recording')
+                    print ('Stop Recording')
                     self.controller.stop_recording()
+
                     return 'Record'
             else: 
                 return 'Record'
+
+        @self.app.callback(
+            dash.dependencies.Output('reconstructionbutton', 'children'),
+            [dash.dependencies.Input('reconstructionbutton', 'n_clicks')])
+        def callback_dropdown(n_clicks):
+            if n_clicks is not None:
+                if self.recording == False:
+                    if self.connected == True:
+                        self.controller.image_reconstruct._reconstructing = False  # set the reconstruction to off.
+
+                        return 'Stop Reconstruction'
+                    else:
+                        # print ('comms not connected')
+                        return 'Reconstruction'
+                else:
+                    print('Stop Reconstruction')
+                    self.controller.stop_recording()
+                    self.controller.image_reconstruct._reconstructing = False  # set the reconstruction to off.
+
+                    return 'Reconstruction'
+            else:
+                return 'Reconstruction'
+
 
         # This displays the page, it should also pass the app and controller info to the class. 
         @self.app.callback(Output('page-content', 'children'),
