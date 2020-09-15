@@ -10,7 +10,7 @@ SPECTRA uses an FTDI chip to communicate via UART. The VCP FTDI driver is not pr
 
 ## Requirements
 ```
-Python 3.6.7+
+Python 3.6.7 
 ```
 
 ## Install
@@ -31,6 +31,23 @@ Alternatively you can run the following command to get a list of all installed m
 pip freeze
 
 ```
+
+You can also install in a virtual environment following the directions below, which means any other python modules you have installed remain the same, and the EIT project will be in a separate sandbox. 
+
+```
+virtualenv -p python3 envtest
+
+source envtest/bin/activate
+
+git clone https://github.com/OpenEIT/OpenEIT.git
+
+cd OpenEIT
+
+pip install -r requirements.txt
+
+python app.py 
+```
+
 ## Make sure the button is in the 'ON' position. 
 
 Plug in your microUSB cable if using with serial, then make sure that switch is turned on. Bluetooth and serial comms should now be active. 
@@ -65,11 +82,25 @@ In the root OpenEIT folder there are a couple of extra scripts which are helpful
 
 # offline.py 
 
-Is an example of how to read in offline data for analysis outside the dashboard. 
+Is an example of how to read in offline data for analysis outside the dashboard. It will read in a file created by simdata.py, or one that is saved by the dashboard. Read through this file, and modify it for your own application. This is an example, and do note that algorithms can be tuned and optimized. You can look at the pyEIT documentation to find more details on this. 
+
+```
+python offline.py
+
+```
 
 # simdata.py 
 
-Simdata creates data in the same format as the hardware device, incase you want to do simulations before collecting real data. 
+Simdata creates data in the same format as the hardware device, incase you want to do simulations before collecting real data. Simdata currently appends data to the simdata.txt file. Do note, that if you change parameters for recording, you should remove the pre-exisitng simdata file, so the data contained in it is all of the same format. 
+
+Example usage:
+
+```
+python simdata.py
+
+```
+
+Outputs a simdata.txt file in the same format as the EIT dashboard. 
 
 You can also use the main software to do either time series or bioimpedance spectroscopy. Instructions for these can be found in the readthedocs tutorials. 
 
