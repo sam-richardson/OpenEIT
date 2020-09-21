@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5cc583b-df8f-432e-9759-a1fdb0bdb495" name="Default Changelist" comment="" />
+    <list default="true" id="e5cc583b-df8f-432e-9759-a1fdb0bdb495" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/OpenEIT/reconstruction/pyeit/mesh/wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenEIT/reconstruction/pyeit/mesh/wrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline.py" beforeDir="false" afterPath="$PROJECT_DIR$/offline.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+            <state relative-caret-position="4">
+              <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
               <folding>
                 <element signature="e#159#197#0" expanded="true" />
               </folding>
@@ -26,10 +29,32 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OpenEIT/dashboard/state.py">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/offline.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+            <state relative-caret-position="629">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+              <folding>
+                <element signature="e#213#277#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OpenEIT/reconstruction/jac.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -37,22 +62,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OpenEIT/dashboard/dash_control.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="136" column="36" lean-forward="true" selection-start-line="136" selection-start-column="36" selection-end-line="136" selection-end-column="36" />
+            <state relative-caret-position="2601">
+              <caret line="191" column="61" selection-start-line="191" selection-start-column="48" selection-end-line="191" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OpenEIT/dashboard/controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="323" selection-start-line="322" selection-end-line="323" />
+            <state relative-caret-position="1207">
+              <caret line="89" column="29" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="29" />
               <folding>
                 <element signature="e#497#719#0" />
-                <element signature="e#764#1710#0" />
-                <element signature="e#1758#2894#0" />
-                <element signature="e#2951#4135#0" />
               </folding>
             </state>
           </provider>
@@ -61,23 +83,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OpenEIT/reconstruction/worker.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="91" column="29" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="29" />
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="e#277#291#0" expanded="true" />
-                <element signature="e#1343#2032#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OpenEIT/reconstruction/bp.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="65" column="34" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="34" />
-              <folding>
-                <element signature="e#278#292#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simdata.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+            <state relative-caret-position="901">
+              <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -95,15 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OpenEIT/backend/serialhandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
-              <folding>
-                <element signature="e#1200#2207#0" />
-                <element signature="e#2236#14515#0" />
-                <element signature="e#4146#4338#0" />
-                <element signature="e#6875#13318#0" />
-                <element signature="e#13384#13531#0" />
-              </folding>
+            <state relative-caret-position="510">
+              <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -122,6 +124,9 @@
       <find>connect</find>
       <find>parse_any_line</find>
     </findStrings>
+    <dirStrings>
+      <dir>C:\Users\diabeticfoot\Documents\PostdocEIT\OpenEIT\OpenEIT\data</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -135,15 +140,18 @@
         <option value="$PROJECT_DIR$/OpenEIT/backend/serialhandler.py" />
         <option value="$PROJECT_DIR$/OpenEIT/reconstruction/worker.py" />
         <option value="$PROJECT_DIR$/OpenEIT/dashboard/controller.py" />
+        <option value="$PROJECT_DIR$/OpenEIT/reconstruction/pyeit/mesh/wrapper.py" />
+        <option value="$PROJECT_DIR$/offline.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1915" />
-    <option name="y" value="-240" />
-    <option name="width" value="1934" />
-    <option name="height" value="1027" />
+    <option name="x" value="-1869" />
+    <option name="y" value="-294" />
+    <option name="width" value="1241" />
+    <option name="height" value="678" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -160,24 +168,12 @@
             <path>
               <item name="OpenEIT" type="b2602c69:ProjectViewProjectNode" />
               <item name="OpenEIT" type="462c0819:PsiDirectoryNode" />
-              <item name="OpenEIT" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OpenEIT" type="b2602c69:ProjectViewProjectNode" />
               <item name="OpenEIT" type="462c0819:PsiDirectoryNode" />
               <item name="OpenEIT" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenEIT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenEIT" type="462c0819:PsiDirectoryNode" />
-              <item name="OpenEIT" type="462c0819:PsiDirectoryNode" />
-              <item name="reconstruction" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OpenEIT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenEIT" type="462c0819:PsiDirectoryNode" />
-              <item name="sandbox" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -202,6 +198,34 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="offline" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="OpenEIT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/offline.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.offline" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -217,21 +241,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-285" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.282516" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.19936034" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5005417" side_tool="true" weight="0.15031983" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32956153" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4989059" visible="true" weight="0.18743229" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4989059" visible="true" weight="0.17768148" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5010941" side_tool="true" weight="0.24179432" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.42903575" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.42857143" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -288,8 +313,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/OpenEIT/dashboard/modes/imaging.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+        <state relative-caret-position="-2">
+          <caret line="69" column="58" selection-start-line="69" selection-start-column="58" selection-end-line="85" selection-end-column="57" />
           <folding>
             <element signature="e#158#172#0" expanded="true" />
             <element signature="e#3525#25435#0" />
@@ -379,45 +404,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/offline.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="112" column="43" lean-forward="true" selection-start-line="112" selection-start-column="43" selection-end-line="112" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/simdata.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+        <state relative-caret-position="901">
+          <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OpenEIT/backend/serialhandler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
-          <folding>
-            <element signature="e#1200#2207#0" />
-            <element signature="e#2236#14515#0" />
-            <element signature="e#4146#4338#0" />
-            <element signature="e#6875#13318#0" />
-            <element signature="e#13384#13531#0" />
-          </folding>
+        <state relative-caret-position="510">
+          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OpenEIT/dashboard/dash_control.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="136" column="36" lean-forward="true" selection-start-line="136" selection-start-column="36" selection-end-line="136" selection-end-column="36" />
+        <state relative-caret-position="2601">
+          <caret line="191" column="61" selection-start-line="191" selection-start-column="48" selection-end-line="191" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+        <state relative-caret-position="4">
+          <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
           <folding>
             <element signature="e#159#197#0" expanded="true" />
           </folding>
@@ -426,24 +437,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/OpenEIT/reconstruction/worker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="91" column="29" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="29" />
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="e#277#291#0" expanded="true" />
-            <element signature="e#1343#2032#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OpenEIT/dashboard/controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="323" selection-start-line="322" selection-end-line="323" />
+        <state relative-caret-position="1207">
+          <caret line="89" column="29" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="29" />
           <folding>
             <element signature="e#497#719#0" />
-            <element signature="e#764#1710#0" />
-            <element signature="e#1758#2894#0" />
-            <element signature="e#2951#4135#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenEIT/reconstruction/jac.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenEIT/reconstruction/pyeit/mesh/wrapper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/offline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="e#213#277#0" expanded="true" />
           </folding>
         </state>
       </provider>
